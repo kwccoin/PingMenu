@@ -11,6 +11,8 @@
 @interface PreferencesWindowController : NSWindowController
 
 @property (assign) IBOutlet NSTextField *domain;
+@property (assign) IBOutlet NSTextField *freq;
+
 @property (assign) IBOutlet NSButton *saveButton;
 
 - (IBAction)saveButtonPressed:(id)sender;

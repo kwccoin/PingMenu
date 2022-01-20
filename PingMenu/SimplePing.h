@@ -167,6 +167,7 @@ struct IPHeader {
 };
 typedef struct IPHeader IPHeader;
 
+/*
 check_compile_time(sizeof(IPHeader) == 20);
 check_compile_time(offsetof(IPHeader, versionAndHeaderLength) == 0);
 check_compile_time(offsetof(IPHeader, differentiatedServices) == 1);
@@ -178,6 +179,7 @@ check_compile_time(offsetof(IPHeader, protocol) == 9);
 check_compile_time(offsetof(IPHeader, headerChecksum) == 10);
 check_compile_time(offsetof(IPHeader, sourceAddress) == 12);
 check_compile_time(offsetof(IPHeader, destinationAddress) == 16);
+*/
 
 // ICMP type and code combinations:
 
@@ -198,9 +200,11 @@ struct ICMPHeader {
 };
 typedef struct ICMPHeader ICMPHeader;
 
+/*
 check_compile_time(sizeof(ICMPHeader) == 8);
 check_compile_time(offsetof(ICMPHeader, type) == 0);
 check_compile_time(offsetof(ICMPHeader, code) == 1);
 check_compile_time(offsetof(ICMPHeader, checksum) == 2);
 check_compile_time(offsetof(ICMPHeader, identifier) == 4);
 check_compile_time(offsetof(ICMPHeader, sequenceNumber) == 6);
+*/
